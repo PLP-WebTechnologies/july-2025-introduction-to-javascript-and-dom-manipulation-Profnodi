@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Part 1: Basic JavaScript Demo -->
+        <section id="part1">
+            <h2>🎯 Part 1: JavaScript Basics</h2>
+            <div class="input-group">
+                <label for="ageInput">Enter your age:</label>
+                <input type="number" id="ageInput" placeholder="Enter your age">
+                <button onclick="checkAge()">Check Age</button>
+            </div>
+            <p id="ageResult"></p>
+        </section>
+
+        <!-- Part 2: Functions Demo -->
+        <section id="part2">
+            <h2>❤️ Part 2: JavaScript Functions</h2>
+            <div class="input-group">
+                <label for="priceInput">Enter price:</label>
+                <input type="number" id="priceInput" placeholder="Enter price">
+                <label for="quantityInput">Quantity:</label>
+                <input type="number" id="quantityInput" placeholder="Quantity" value="1">
+                <button onclick="calculateTotal()">Calculate Total</button>
+            </div>
+            <p id="totalResult"></p>
+
+            <div class="input-group">
+                <label for="stringInput">Enter text:</label>
+                <input type="text" id="stringInput" placeholder="Enter text">
+                <button onclick="formatAndDisplay()">Format Text</button>
+            </div>
+            <p id="formatResult"></p>
+        </section>
+
+        <!-- Part 3: Loops Demo -->
+        <section id="part3">
+            <h2>🔁 Part 3: JavaScript Loops</h2>
+            <div class="input-group">
+                <button onclick="generateMultiplicationTable()">Generate Multiplication Table (1-5)</button>
+                <button onclick="countdownTimer()">Start Countdown (10 seconds)</button>
+            </div>
+            <div id="multiplicationTable"></div>
+            <p id="countdownDisplay"></p>
+        </section>
+
+        <!-- Part 4: DOM Manipulation Demo -->
+        <section id="part4">
+            <h2>🌐 Part 4: DOM Manipulation</h2>
+            <div class="dom-controls">
+                <button onclick="changeText()">Change Text Color</button>
+                <button onclick="toggleVisibility()">Toggle Content</button>
+                <button onclick="addNewItem()">Add New Item</button>
+                <button onclick="resetAll()">Reset All</button>
+            </div>
+            
+            <div id="contentToToggle" class="toggle-content">
+                <p>This content can be toggled! Click the button above to show/hide me.</p>
+            </div>
+            
+            <ul id="itemList">
+                <li>Initial Item 1</li>
+                <li>Initial Item 2</li>
+            </ul>
+            
+            <div class="color-demo">
+                <p id="textToChange">This text will change color when you click the button!</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
